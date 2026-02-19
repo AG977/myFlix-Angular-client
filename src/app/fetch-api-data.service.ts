@@ -65,7 +65,7 @@ private handleError(error: HttpErrorResponse): any {
 
   getDirector(): Observable<any> {
     const token = localStorage.getItem('token');
-    return this.http.get(apiUrl + `Directors`, {headers: new HttpHeaders(
+    return this.http.get(apiUrl + `Director`, {headers: new HttpHeaders(
       {
         Authorization: 'Bearer ' + token,
       })}).pipe(
